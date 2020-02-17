@@ -41,20 +41,8 @@ public class BasicDemo {
 		// Initialize the eyes SDK
 		eyes = new Eyes(runner);
 
-		// Raise an error if no API Key has been found.
-		if(isNullOrEmpty(System.getenv("APPLITOOLS_API_KEY"))) {
-		    throw new RuntimeException("No API Key found; Please set environment variable 'APPLITOOLS_API_KEY'.");
-		}
-
-		// Set your personal Applitols API Key from your environment variables.
-		eyes.setApiKey(System.getenv("APPLITOOLS_API_KEY"));
-
-		// set batch name
-		eyes.setBatch(batch);
-
 		// Use Chrome browser
 		driver = new ChromeDriver();
-
 	}
 
 	@Test
@@ -90,7 +78,7 @@ public class BasicDemo {
 
 		// If the test was aborted before eyes.close was called, ends the test as
 		// aborted.
-		eyes.abortIfNotClosed();
+		eyes.abortAsync();
 
 		// Wait and collect all test results
 		TestResultsSummary allTestResults = runner.getAllTestResults();
