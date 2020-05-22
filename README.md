@@ -41,7 +41,7 @@
 3. Import the project as a *Maven* project in IntelliJ IDEA.
 4. Navigate to BasicDemo class -  src\test\java\com\applitools\quickstarts\BasicDemo in IntelliJ IDEA.
 5. In IntelliJ IDEA or in any editor update file src\test\java\com\applitools\quickstarts\BasicDemo.java  and set your ApiKey in string 'config.setApiKey("...")' (or comment the string and set APPLITOOLS_API_KEY environment variable)
-6. Run class BasicDemo from IntelliJ IDEA - tap Run, choose 'BasicDemo'.
+6. Run class BasicDemo from IntelliJ IDEA - tap Run > Run, choose 'BasicDemo'.
 
 Read more here: https://www.applitools.com/tutorials/selenium-java.html 
 
