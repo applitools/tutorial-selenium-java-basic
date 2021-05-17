@@ -63,7 +63,7 @@ public class BasicDemo {
 		// Set AUT's name, test name and viewport size (width X height)
 		// We have set it to 800 x 600 to accommodate various screens. Feel free to
 		// change it.
-		eyes.open(driver, "Demo App", "Smoke Test", new RectangleSize(800, 600));
+		eyes.open(driver, "Demo App - java", "Smoke Test", new RectangleSize(800, 600));
 
 		// Navigate the browser to the "ACME" demo app.
 		driver.get("https://demo.applitools.com");
